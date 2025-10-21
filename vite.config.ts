@@ -20,5 +20,13 @@ export default defineConfig({
     environment: 'happy-dom',
     setupFiles: '.vitest/setup',
     include: ['**/test.{ts,tsx}']
+  },
+  preview: {
+    allowedHosts: [
+      'localhost',
+      '127.0.0.1',
+      '0.0.0.0',
+      '3255b0929227.ngrok-free.app'
+    ]
   }
 })

@@ -11,6 +11,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "setup": "npx tsx scripts/setup-srcipt.ts",
     "build": "tsc && vite build",
     "build:ssg": "tsc && vite build && react-snap",
     "serve": "vite preview",
@@ -25,7 +26,10 @@
       "collapseWhitespace": true,
       "removeComments": true
     },
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
     "include": [
       "/",
       "/about",
@@ -37,7 +41,8 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.9.4"
+    "react-router-dom": "^7.9.4",
+    "seord": "^0.0.5-patch.5"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.8.0",
